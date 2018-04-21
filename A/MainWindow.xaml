@@ -8,17 +8,17 @@
         Title="BMI" Height="350" Width="525">
     <StackPanel>
           <StackPanel Orientation="Horizontal">
-            <TextBox>身高:</TextBox>
-            <TextBlock Width="376" Height="32"></TextBlock>
-            <Button Click="Button_Click"  Content="清除" Height="35"/>
+            <TextBlock>身高:</TextBlock>
+            <TextBox Width="420" Height="32" Margin="2,2,2.2,2"></TextBox>
+            <Button Click="Button_Click"  Content="清除" Height="35" Width="58"/>
         </StackPanel>
         <StackPanel Orientation="Horizontal">
-        <TextBox>體重:</TextBox>
-            <TextBlock Width="376" Height="32"></TextBlock>
-            <Button Click="Button_Click"  Content="清除" Height="35"/> 
+        <TextBlock>體重:</TextBlock>
+            <TextBox Width="420" Height="32" Margin="2,2,2.2,2"></TextBox>
+            <Button Click="Button_Click"  Content="清除" Height="35" Width="58"/> 
         </StackPanel>
-        <Button Click="Button_Click" Height="48" Margin="0,0,0.4,0">計算</Button>
-        <TextBox Width="100" Height="100" Padding="100"
-                Margin="202,10,216.4,30" Background="Red" Foreground="White" Text="Hello!"/>
+        <Button Click="Button_Click" Height="48" Margin="4,4,4.4,4">計算</Button>
+        <TextBlock
+                Margin="245.2,50,230.2,0"  FontSize="50" Foreground="Red" Text="0"/>
     </StackPanel>
 </Window>
