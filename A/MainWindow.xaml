@@ -7,18 +7,26 @@
         mc:Ignorable="d"
         Title="BMI" Height="350" Width="525">
     <StackPanel>
-          <StackPanel Orientation="Horizontal">
+        <StackPanel Orientation="Horizontal">
             <TextBlock>身高:</TextBlock>
-            <TextBox Width="420" Height="32" Margin="2,2,2.2,2"></TextBox>
-            <Button Click="Button_Click"  Content="清除" Height="35" Width="58"/>
+            <TextBox Width="420" Height="32" Margin="2,2,2.2,2" x:Name="HeightBox">5</TextBox>
+           <Button Click="Button1_Click"  Content="清除" Height="35" Width="58" x:Name="button1" />
         </StackPanel>
+        <Slider Minimum="0" Maximum="200"
+         x:Name="HeightBar" ValueChanged="HeightBar_ValueChanged" TickFrequency="10"
+                    IsSnapToTickEnabled="True">
+        </Slider>
         <StackPanel Orientation="Horizontal">
         <TextBlock>體重:</TextBlock>
-            <TextBox Width="420" Height="32" Margin="2,2,2.2,2"></TextBox>
-            <Button Click="Button_Click"  Content="清除" Height="35" Width="58"/> 
+            <TextBox Width="420" Height="32" Margin="2,2,2.2,2" x:Name="WeightBox" >5</TextBox>
+            <Button Click="Button2_Click"  Content="清除" Height="35" Width="58" x:Name="button2" /> 
         </StackPanel>
-        <Button Click="Button_Click" Height="48" Margin="4,4,4.4,4">計算</Button>
+        <Slider Minimum="0" Maximum="200"
+         x:Name="WeightBar" ValueChanged="WeighBar_ValueChanged" TickFrequency="10"
+                    IsSnapToTickEnabled="True">
+        </Slider>
+       
         <TextBlock
-                Margin="245.2,50,230.2,0"  FontSize="50" Foreground="Red" Text="0"/>
+               TextAlignment="Center" FontSize="50" Foreground="Red" Margin="50" x:Name="Answer"  >0</TextBlock>
     </StackPanel>
 </Window>
